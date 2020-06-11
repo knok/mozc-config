@@ -288,7 +288,8 @@ struct POSMap {
     const char *a;
     const char *b;
 };
-#include "dictionary/pos_map.h"
+// #include "dictionary/pos_map.h"
+#include "dictionary/pos_map.inc"
 }
 #include <set>
 
