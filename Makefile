@@ -8,15 +8,15 @@ CXX	= g++
 RM	= rm -f
 INSTALL = /usr/bin/install
 
-MOZC_SRC = ..
+MOZC_SRC = ../mozc-2.23.2815.102+dfsg/src
 
-CFLAGS	= 
+CFLAGS	= -DOS_LINUX
 
 LDFLAGS	=
 
-INCS	= -I$(MOZC_SRC) \
-	      -I$(MOZC_SRC)/out/Release/obj/gen \
-	      -I$(MOZC_SRC)/out/Release/obj/gen/proto_out
+INCS	= -I$(MOZC_SRC)  \
+	      -I$(MOZC_SRC)/out_linux/Release/gen \
+	      -I$(MOZC_SRC)/out_linux/Release/gen/proto_out
 
 MOZC_CONF	= mozc-config
 
